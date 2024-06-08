@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Enhanced Lookup" icon-name="standard:search">
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="search" label="Search" onchange={handleSearchChange}></lightning-input>
+            <template if:true={hasResults}>
+                <ul class="slds-list_dotted">
+                    <template for:each={results} for:item="result">
+                        <li key={result.Id} class="slds-item">
+                            <button class="slds-button slds-button_reset" data-id={result.Id} onclick={handleResultClick}>
+                                {result.Name}
+                            </button>
+                        </li>
+                    </template>
+                </ul>
+            </template>
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+            </template>
+        </div>
+    </lightning-card>
+</template>

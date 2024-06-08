@@ -1,0 +1,22 @@
+.slds-list_dotted {
+    list-style-type: none;
+    padding: 0;
+}
+
+.slds-item {
+    margin: 0.5rem 0;
+}
+
+.slds-m-around_medium {
+    margin: 1rem;
+}
+
+/* Add styles for the reset button to look like a link */
+.slds-button_reset {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--lwc-colorTextLink, #0070d2);
+    cursor: pointer;
+    text-decoration: none;
+}

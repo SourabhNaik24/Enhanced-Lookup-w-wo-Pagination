@@ -1,0 +1,63 @@
+/* Apply padding around the search input and results */
+.slds-m-around_medium {
+    margin: 1rem;
+}
+
+/* Style the dotted list for search results */
+.slds-list_dotted {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Add spacing between list items */
+.slds-item {
+    margin: 0.5rem 0;
+}
+
+/* Style the pagination controls */
+.slds-m-top_medium {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+/* Style for the pagination span */
+.slds-pagination__text {
+    margin: 0 1rem;
+}
+
+/* Add styles for the reset button to look like a link */
+.slds-button_reset {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--lwc-colorTextLink, #0070d2);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.slds-button_reset:hover,
+.slds-button_reset:focus {
+    text-decoration: underline;
+    color: var(--lwc-colorTextLinkFocus, #005fb2);
+}
+
+/* Style the spinner */
+.lightning-spinner {
+    display: block;
+    margin: auto;
+}
+
+/* Style for the container of the lookup */
+.lookup-container {
+    position: relative;
+}
+
+/* Style the loading spinner */
+.lookup-container .slds-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
